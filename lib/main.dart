@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_snactum/widget/nav_drawer.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,7 +29,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('flutter with sanctum')),
+      appBar: AppBar(
+        title: Text('flutter with sanctum'),
+      ),
+      drawer: NavDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
