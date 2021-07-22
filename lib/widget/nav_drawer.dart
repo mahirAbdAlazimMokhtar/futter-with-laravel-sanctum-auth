@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_snactum/screens/post_screen.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -8,7 +9,13 @@ class NavDrawer extends StatelessWidget {
         children: [
           ListTile(
             title: Text('Mahir Abd Alazim'),
-          )
+          ),
+          ListTile(
+            title: Text('Posts'),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>PostScreen()));
+            },
+          ),
         ],
       )
     );
